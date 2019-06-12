@@ -1,0 +1,28 @@
+body {
+    text-align: justify;
+    background-image: url("newsPaperWhite.jpg") 
+    
+}
+
+.headline {
+    width: 400px;
+    
+}
+
+.content {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 20px;
+    font-size: 17px
+    
+}
+
+img {
+    width: 225px;
+    border-style: solid;
+  border-color: black;
+   padding: 10px;
+   
+}
+

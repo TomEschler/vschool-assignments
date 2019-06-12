@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    font-size: 27pt;
+    color: tomato;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.header {
+    background:rgb(1, 1, 49);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    color: white;
+    font-size: 10pt;
+}
+
+.main {
+    background: #00b7ff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 80vh;
+    justify-content: center;
+    
+}
+.main img {
+    height: 80vh;
+}
+/* .slogan img {
+    height: 400px;
+    width: 1300px;
+    margin: 0;
+}
+
+.other img {
+    height: 450px;
+    width: 500px;
+    margin: 0;
+} */
+
+.footer {
+    background:rgb(1, 1, 49);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 10vh;
+}

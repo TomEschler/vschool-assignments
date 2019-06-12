@@ -1,0 +1,27 @@
+#box1 {
+    position: fixed;
+    padding: 20px;
+    top: 100px;
+    border-style: double;
+    border-width: 6px;
+    width:400pt;
+    height: 400pt;
+    left: 30%;
+
+    }
+
+h1 {
+    height: 1200pt;
+}
+
+#first-name {
+    position: fixed;
+    padding: 20px;
+    top: 100px;
+    border-style: double;
+    border-width: 6px;
+    width:200pt;
+    height: 50pt;
+    left: 10%;
+
+    }

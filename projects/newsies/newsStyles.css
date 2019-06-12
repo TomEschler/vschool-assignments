@@ -1,0 +1,35 @@
+
+  div.a {
+    
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    border: 3px solid black;
+    background-image: url("newsPaperWhite.jpg")
+  }
+  
+  div.b {
+    position: absolute;
+    
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+
+    
+  } 
+  
+  div.c {
+    right:0;
+    position: absolute;  
+    width: 500px;
+    height: 800px;
+    margin: 35px;
+    font-size: 18px;
+   
+    
+
+  } 
+
+  img {
+    width: 400px;
+    height: 400px;

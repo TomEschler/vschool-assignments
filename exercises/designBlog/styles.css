@@ -1,0 +1,102 @@
+/* * {
+
+} */
+
+/* .box {
+    background-color: blue;
+    position: relative;
+    border: 10px;
+    border-color: black;
+
+} */
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px;
+    background: whitesmoke
+}
+
+
+
+  .header {
+      position: fixed;
+      /* padding: px; */
+      width: 30.4%;
+      height: 45px;
+      top: 70px;
+      font-size: 23pt
+    
+  }
+.head-img {
+    position: fixed;
+    top: 200px;
+}
+
+
+  .main-navbar {
+    position: fixed;
+    background-color: rgb(235, 122, 57);
+    width: 25%;
+    height: 45px;
+    padding: 5px;
+    
+  }
+
+  .blog1 {
+    position: relative;
+    padding: 20px;
+    top: 100px;
+    border-style: double;
+    border-width: 6px;
+    width:25%;
+    left: 40%;
+
+    }
+
+    .blog2 {
+        position: relative;
+        padding: 20px;
+        top: 125px;
+        border-style: double;
+        border-width: 6px;
+        width:25%;
+        left: 40%;
+        
+     }
+
+     .blog3 {
+        position: relative;
+        padding: 20px;
+        top: 150px;
+        border-style: double;
+        border-width: 6px;
+        width:25%;
+        left: 40%;
+        
+     }
+
+ .title {
+    position: relative;
+    font-size: 10pt;
+    top: 0pt;
+
+}
+
+.description {
+    height: 25px;
+    
+}
+
+/* .image {
+    height: 200px;
+    border-style: solid;
+    border-color:aqua;
+} */
+
+img {
+    height: 200px;
+    border-style: solid;
+    border-color: rgb(255, 196, 0);
+    border-width: 5px;
+    
+}
