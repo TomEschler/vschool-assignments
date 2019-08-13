@@ -1,0 +1,29 @@
+
+*{ 
+    background-color: whitesmoke;
+}
+.todoBox{
+    border: 1px solid black;
+    margin: 15px 70px;
+    box-shadow: 2px 3px 5px black;
+}
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    text-align: center;
+}
+button {
+    display: block;
+    margin: auto;
+} 
+form {
+    background-color: white;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #efefef;
+    padding: 30px;
+}

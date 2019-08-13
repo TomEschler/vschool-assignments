@@ -1,0 +1,49 @@
+{
+    "appetizers": [
+        {
+            "name":"wings",
+            "ingredients": ["cajun","chicken"],
+            "description": "cajun dry rub wings"
+        },
+        {
+            "name":"bread",
+            "ingredients": ["sugar","yeast"],
+            "description": "this is sugar dough"
+        }
+    ],
+
+    "cold sandwiches": [
+        {
+            "name":"blt",
+            "ingredients": ["bacon","lettuce"],
+            "description": "yummy"
+        },
+        {
+            "name":"turkey",
+            "ingredients": ["turkey","bread"],
+            "description": "great sandwich"
+        }
+    ],
+
+    "hot sandwiches": [
+        {
+            "name":"meatball",
+            "ingredients": ["sausage","cheese"],
+            "description": "wonderful meatball"
+        },
+        {
+            "name":"philly",
+            "ingredients": ["meat","cheese"],
+            "description": "best philly in Utah"
+        }
+    ],
+
+    "desserts": [
+        {
+            "name":"wings",
+            "ingredients": ["cajun","chicken"],
+            "description": "cajun dry rub wings"
+        }
+    ],
+    "drinks": []
+}
