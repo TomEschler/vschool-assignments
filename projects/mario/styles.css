@@ -28,7 +28,7 @@
     height: 89%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-gap: 5pt;
     
 }
@@ -62,6 +62,12 @@ form[name=bobForm]{
     grid-row: 4/5;
     text-align: center;
 }
+/* form[name=input]{
+    font-size: 20pt;
+    grid-column: 2/4;
+    grid-row: 8/9;
+    text-align: center;
+} */
 .cheep {
     background: url(cheep.png);
     grid-column: 2/4;
@@ -80,9 +86,15 @@ input {
     font-size: 15pt;
     text-align: center
 }
-.total {
+.totals {
     grid-column: 2/4;
     grid-row: 7/8;
+    font-size: 25pt;
+    text-align: center;
+}
+.yo{
+    grid-column: 2/4;
+    grid-row: 8/9;
     font-size: 25pt;
     text-align: center;
 }
@@ -101,9 +113,25 @@ button {
     font-size: 17pt;
     color: black;
 }
+#numberTotal{
+    color:black;
+    font-size: 20pt;
+}
 
-@media (max-width: 500pt){
+@media (max-width: 1000px){
     .content{
         background: whitesmoke;
     }
+    /* .totals {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        font-size: 25pt;
+        text-align: center;
+        height: 25px;
+        width: 30px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+
+    } */
 }

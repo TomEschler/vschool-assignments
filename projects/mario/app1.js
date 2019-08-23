@@ -1,6 +1,22 @@
 
-document.goombaForm.addEventListener('submit', function(e){
+let goomba = document.getElementById('goombas')
+let bobomb = document.getElementById('bobombs')
+let cheep = document.getElementById('cheepcheeps')
+
+    
+
+
+document.getElementById('sum').addEventListener('submit', function(e) {
     e.preventDefault()
-    let goo= form.goomba1.value
-    console.log('hello')
+    const total = (goomba.value * 5) + (bobomb.value * 7) + (cheep.value * 11);
+    
+    
+    let answer = document.getElementById('numberTotal');
+    answer.innerText = "total is: " + total;
+    
+    console.log(total)
+
+    goomba.value = "";
+    bobomb.value = "";
+    cheep.value = "";
 })

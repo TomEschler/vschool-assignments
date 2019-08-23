@@ -3,10 +3,10 @@ var person = {
     age: 12
   }
 
-//   if (person.name === "Bobby") {
-//     console.log('Not allowed to go to the movie')
-// } else  
-//  console.log('Is allowed to go to the movie')
+  if (person.name === "Bobby") {
+    console.log('Not allowed to go to the movie')
+} else  
+ console.log('Is allowed to go to the movie')
 
 
 

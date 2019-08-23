@@ -10,7 +10,7 @@ xhr.onreadystatechange = function() {
         const name = data.objects[0];
         document.getElementById("demo1").innerHTML = "JSON results: " + jsonData;
         document.getElementById("demo2").innerHTML = "Parsed JSON's 'name' property: " + data.name;
-        console.log(name)
+       
     }
 }
 
