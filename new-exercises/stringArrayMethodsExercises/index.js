@@ -65,3 +65,12 @@ let res = str.split(" ");
 string.split(separator, limit)
 // separator	Optional. Specifies the character, or the regular expression, to use for splitting the string. If omitted, the entire string will be returned (an array with only one item)
 // limit	Optional. An integer that specifies the number of splits, items after the split limit will not be included in the array
+
+// MAP
+
+let numbers = [65, 44, 12, 4];
+let newarray = numbers.map(myFunction)
+
+function myFunction(num) {
+  return num * 10;
+}
