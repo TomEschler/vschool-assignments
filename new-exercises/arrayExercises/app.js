@@ -30,19 +30,19 @@
 
 // const largestSwap = (num) => Number(num.toString().split('').reverse().join('')) <= num;
 
-// const officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer",  "computer"] 
+const officeItems = ['code', 'code', 'cool']
 
-// function myFunc(param1) {
-//     let count=0
-//     for (i=0; i< param1.length; i++){
-//         if (param1[i] === "computer") {
-//             count++
-//         }
-//     }
-//     return count
-// }
+function myFunc(param1) {
+    let count=0
+    for (i=0; i< param1.length; i++){
+        if (param1[i] === ) {
+            count++
+        }
+    }
+    return count
+}
 
-// console.log(myFunc(officeItems))
+console.log(myFunc(officeItems))
 
 // const peopleWhoWantToSeeMadMaxFuryRoad = [
 //     {
@@ -188,13 +188,13 @@
 //    }
 //  }
 
-const eventsAtWork = ["work", "pretend to work", "party", "work", "meeting", "party", "daily grind", "work", "party"]
+// const eventsAtWork = ["work", "pretend to work", "party", "work", "meeting", "party", "daily grind", "work", "party"]
 
-for(let i=0; i < eventsAtWork.length; i++) {
-  if( eventsAtWork[i] === "party"){
-    console.log('hooray')
-  }
-}
+// for(let i=0; i < eventsAtWork.length; i++) {
+//   if( eventsAtWork[i] === "party"){
+//     console.log('hooray')
+//   }
+// }
 
 // https://repl.it/@ThomasWolfgangW/BronzeRealBackup-2m = 10;
 
@@ -222,26 +222,26 @@ for(let i=0; i < eventsAtWork.length; i++) {
 // console.log(person.myFunction())
 // this calls on the function which returns what 'this' is. this is the global object
 
-var person = {
-    name: 'The Joker',
-    type: 'evil',
-    enemy: 'Batman',
-    speak: function () {
-        console.log('Why so serious?');
-    }
-};
+// var person = {
+//     name: 'The Joker',
+//     type: 'evil',
+//     enemy: 'Batman',
+//     speak: function () {
+//         console.log('Why so serious?');
+//     }
+// };
 
-console.log(person.speak);  // tells you that this is a Function type in the console since we're not executing it with the () yet.
-person.speak();
+// console.log(person.speak);   tells you that this is a Function type in the console since we're not executing it with the () yet.
+// person.speak();
 
 //add property to object
 
-const person = {
-    name: 'Harry',
-    age: 11,
-    birthday: function () {
-        this.age++;
-    }
-};
-person.hair = 'bald';
-console.log(person)
+// const person = {
+//     name: 'Harry',
+//     age: 11,
+//     birthday: function () {
+//         this.age++;
+//     }
+// };
+// person.hair = 'bald';
+// console.log(person)

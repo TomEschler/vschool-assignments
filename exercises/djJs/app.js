@@ -31,3 +31,16 @@ form.addEventListener('submit', function(e) {
     let verb = form.verb.value
   let madLib= "The wonderful" + noun + " did" + adverb + " " + verb + " at Vschool"
 })
+
+
+let form= document.travelForm
+
+//
+
+form.addEventListener("submit", function(event) {
+    event.preventDefault()  
+    
+    
+    alert(form.fName.value)
+
+})

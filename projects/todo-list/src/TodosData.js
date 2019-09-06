@@ -37,3 +37,25 @@
 
 
 // export default TodosData
+
+
+
+
+
+class App extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            hitList: []
+        }
+    }
+
+    componentDidMount() {
+        Axios.get("https://s3.amazonaws.com/v-school/data/hitlist.json").then(response => {
+            this.setState({hitList: response.data})
+        })  
+    }
+
+    render() {
+        console.log(this.state.hitList[0])
+        return (

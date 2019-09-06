@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-size: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+
+}
+.header {
+    background:rgb(85, 198, 243);
+    height: 30pt;
+    width: 100%;
+    justify-content: center;
+    
+}
+.title {
+    color:black;
+    font-size: 30pt;
+    text-align: center;
+}
+.content {
+    background: rgb(226, 122, 122);
+    height: 89%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 5pt;
+    
+}
+.goomba {
+    background: url(goomba.png);
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+form[name=goombaForm] {
+    font-size: 20pt;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.bob {
+    background: url(bob.png);
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+form[name=bobForm]{
+    font-size: 20pt;
+    grid-column: 2/4;
+    grid-row: 4/5;
+    text-align: center;
+}
+/* form[name=input]{
+    font-size: 20pt;
+    grid-column: 2/4;
+    grid-row: 8/9;
+    text-align: center;
+} */
+.cheep {
+    background: url(cheep.png);
+    grid-column: 2/4;
+    grid-row: 5/6;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+form[name=cheepForm] {
+    font-size: 20pt;
+    grid-column: 2/4;
+    grid-row: 6/7;
+    text-align: center;
+}
+input {
+    font-size: 15pt;
+    text-align: center
+}
+.totals {
+    grid-column: 2/4;
+    grid-row: 7/8;
+    font-size: 25pt;
+    text-align: center;
+}
+.yo{
+    grid-column: 2/4;
+    grid-row: 8/9;
+    font-size: 25pt;
+    text-align: center;
+}
+button {
+    font-size: 20pt
+}
+.footer {
+    display: grid;
+    font-size: 20pt;
+    background: rgb(85, 198, 243);
+    height: 40pt;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.box {
+    font-size: 17pt;
+    color: black;
+}
+#numberTotal{
+    color:black;
+    font-size: 20pt;
+}
+
+@media (max-width: 1000px){
+    .content{
+        background: whitesmoke;
+    }
+    /* .totals {
+        grid-column: 2/4;
+        grid-row: 7/8;
+        font-size: 25pt;
+        text-align: center;
+        height: 25px;
+        width: 30px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+
+    } */
+}
