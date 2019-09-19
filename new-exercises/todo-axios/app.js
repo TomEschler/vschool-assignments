@@ -1,12 +1,15 @@
 const form = document.addTodo
 let todoList = []
 
+
+
 const starter = (updating) => {
     axios.get('https://api.vschool.io/thomas/todo/').then((response) => {
         displayTodos(response.data, updating);
         todoList = response.data
     })
 }
+
 starter()
 const displayTodos = (todos, updated) => {
     if(updated === 'updating'){
@@ -16,10 +19,14 @@ const displayTodos = (todos, updated) => {
         let main = document.getElementById('main')
         let parentDiv = document.createElement('div')
         let titleh2 = document.createElement('h2')
-        let deleteBtn = document.createElement("button")
         let checkBox = document.createElement("input")
+        let deleteBtn = document.createElement("button")
+    
+        checkBox.addEventListener("click", function(){
+            checkTodo(todo)
+        })
 
-        deleteBtn.innerText = "Delete"
+        deleteBtn.innerText = "-"
         titleh2.innerText = todo.title;
 
         parentDiv.setAttribute("class", "todoBox")
@@ -32,22 +39,20 @@ const displayTodos = (todos, updated) => {
             })
         })
 
-        checkBox.addEventListener("click", function(){
-            checkTodo(todo)
-        })
+        
 
         if (todo.completed){
             checkBox.checked = true
-            parentDiv.style.textDecoration = "line-through"
-            parentDiv.style.color = "red"
+            parentDiv.style.textDecoration = "line-through red"
+            // parentDiv.style.color = "red"
         } else {
             parentDiv.style.textDecoration = "none"
         } 
 
     
         parentDiv.appendChild(titleh2)
-        parentDiv.appendChild(deleteBtn)
         parentDiv.appendChild(checkBox)
+        parentDiv.appendChild(deleteBtn)
         main.appendChild(parentDiv)
         
     })
@@ -64,16 +69,15 @@ form.addEventListener('submit', function(e){
         let title = form.title.value
         let newObject = {
             title
-            
         }
         postTodo(newObject)
 })
 
 
 const postTodo = (newTodo) => {
-        axios.post('https://api.vschool.io/thomas/todo/', newTodo).then((response)=>{
-            todoList.push(response.data);
-            displayTodos([response.data]);
+        axios.post('https://api.vschool.io/thomas/todo/', newTodo).then( res => {
+            todoList.push(res.data);
+            displayTodos([res.data]);
         })
 }
 
