@@ -18,7 +18,7 @@ const displayTodos = (todos, updated) => {
     todos.forEach((todo)=>{
         let main = document.getElementById('main')
         let parentDiv = document.createElement('div')
-        let titleh2 = document.createElement('h2')
+        let titleh2 = document.createElement('div')
         let checkBox = document.createElement("input")
         let deleteBtn = document.createElement("div")
     
@@ -28,6 +28,7 @@ const displayTodos = (todos, updated) => {
 
         // deleteBtn.innerText = ""
         titleh2.innerText = todo.title;
+        titleh2.setAttribute("class","todoTxt")
         deleteBtn.setAttribute("class","delete")
         parentDiv.setAttribute("class", "todoBox")
         checkBox.setAttribute("type", "checkBox")
@@ -43,8 +44,9 @@ const displayTodos = (todos, updated) => {
 
         if (todo.completed){
             checkBox.checked = true
-            parentDiv.style.textDecoration = "line-through"
-            parentDiv.style.color = "red"
+            parentDiv.style.opacity = ".5"
+            titleh2.style.filter = 'blur(1px)';
+            parentDiv.style.color = "white"
         } else {
             parentDiv.style.textDecoration = "none"
         } 
@@ -64,15 +66,15 @@ const checkTodo = (oldTodo) => {
     })
 }
 
-form.addEventListener('submit', function(e){
+form.addEventListener("submit", function(e){
         e.preventDefault()
         let title = form.title.value
         let newObject = {
             title
         }
+        form.reset()
         postTodo(newObject)
 })
-
 
 const postTodo = (newTodo) => {
         axios.post('https://api.vschool.io/thomas/todo/', newTodo).then( res => {
