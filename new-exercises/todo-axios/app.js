@@ -20,15 +20,15 @@ const displayTodos = (todos, updated) => {
         let parentDiv = document.createElement('div')
         let titleh2 = document.createElement('h2')
         let checkBox = document.createElement("input")
-        let deleteBtn = document.createElement("button")
+        let deleteBtn = document.createElement("div")
     
         checkBox.addEventListener("click", function(){
             checkTodo(todo)
         })
 
-        deleteBtn.innerText = "-"
+        // deleteBtn.innerText = ""
         titleh2.innerText = todo.title;
-
+        deleteBtn.setAttribute("class","delete")
         parentDiv.setAttribute("class", "todoBox")
         checkBox.setAttribute("type", "checkBox")
 
@@ -43,8 +43,8 @@ const displayTodos = (todos, updated) => {
 
         if (todo.completed){
             checkBox.checked = true
-            parentDiv.style.textDecoration = "line-through red"
-            // parentDiv.style.color = "red"
+            parentDiv.style.textDecoration = "line-through"
+            parentDiv.style.color = "red"
         } else {
             parentDiv.style.textDecoration = "none"
         } 
